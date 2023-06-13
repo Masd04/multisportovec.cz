@@ -42,6 +42,13 @@ function Home() {
               Rozmanitost sportů v dětech vyvine chuť učit se novým věcem, která se každému v životě hodí.
             </p>
           </div>
+
+          <div className="flex items-center justify-center">
+            <button className={`${styles.button_krouzek}`} type="submit">
+              PODAT PŘIHLÁŠKU
+            </button>
+          </div>
+
         </div>
 
         <div className="w-full sm:w-1/2 my-10 sm:my-0">
@@ -71,6 +78,13 @@ function Home() {
               consequat eget, tristique non, venenatis quis, ante.
             </p>
           </div>
+
+          <div className="flex items-center justify-center">
+            <button className={`${styles.button_event}`} type="submit">
+              PODAT PŘIHLÁŠKU
+            </button>
+          </div>
+
         </div>
         
       </div>

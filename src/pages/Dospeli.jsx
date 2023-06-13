@@ -14,10 +14,13 @@ function Dospeli() {
         Pracujeme na tom...
       </p>
       </div>
+ 
 
-   
-
-  
+      <div className="flex items-center justify-center">
+      <button className={`${styles.button_event}`} type="submit">
+        PODAT PŘIHLÁŠKU
+      </button>
+      </div>
 
     
 

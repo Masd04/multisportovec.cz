@@ -49,6 +49,12 @@ function Deti() {
       </p>
       </div>
 
+      <div className="flex items-center justify-center">
+      <button className={`${styles.button_krouzek}`} type="submit">
+        PODAT PŘIHLÁŠKU
+      </button>
+      </div>
+
    
 
   
