@@ -59,8 +59,8 @@ const Navbar = () => {
                                                                               //  Atribut rounded odebrat.. ??
     <section className="">
     <nav ref={navRef} className="w-full flex py-4 items-center xs:py-2 navbar top-0 rounded-l bg-black shadow-2xl select-none z-200">
-      <a href="/" className="hidden sm:flex md:flex lg:flex xl:flex w-1/6 xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 object-contain cursor-pointer scale-100 hover:scale-110"><img src={mNapis} alt="Logo"/></a>
-      <a href="/" className="ml-3 w-60 object-contain cursor-pointer sm:hidden"><img src={mNapis} alt="Logo"/></a>
+     <Link to="/" className="hidden sm:flex md:flex lg:flex xl:flex w-1/6 xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 object-contain cursor-pointer scale-100 hover:scale-110"><img src={mNapis} alt="Logo"/></Link>
+     <Link to="/" className="ml-3 w-60 object-contain cursor-pointer sm:hidden"><img src={mNapis} alt="Logo"/></Link>
 
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             {navLinks.map((link, index) => (

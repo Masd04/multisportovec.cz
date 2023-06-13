@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import { dinobg, mPohar, oPohar } from '../static'
+import {Link} from 'react-router-dom'
 import styles from '../style'
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
 
       <div className="flex-col sm:flex-row flex justify-center z-0">
         <div className="w-full sm:w-1/2">
-          <a href="/deti">
+        <Link to="/deti">
             <button className={`${styles.buttons_home} ${styles.appear_home_buttons} ${!isLoading ? 'opacity-100' : ''} mx-auto`}>
               <img
                 src={dinobg}
@@ -26,7 +27,7 @@ function Home() {
                 className="w-80 h-80 transition duration-300 transform hover:scale-110 hover:shadow-lg"
               />
             </button>
-          </a>
+          </Link>
 
           <div className={`${styles.card_home} bg-orange ${styles.appear_home_cards} ${!isLoading ? 'opacity-100' : ''} mx-auto`}>
             <h1 className={`${styles.heading1}`}>Kroužek</h1>
@@ -44,7 +45,7 @@ function Home() {
         </div>
 
         <div className="w-full sm:w-1/2 my-10 sm:my-0">
-          <a href="/dospeli">
+        <Link to="/dospeli">
             <button className={`${styles.buttons_home} ${styles.appear_home_buttons} ${!isLoading ? 'opacity-100' : ''} mx-auto`}>
               <img
                 src={mPohar}
@@ -52,7 +53,7 @@ function Home() {
                 className="w-80 h-80 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg"
               />
             </button>
-          </a>
+          </Link>
 
           <div className={`${styles.card_home} bg-[#6ba0ea] ${styles.appear_home_cards} ${!isLoading ? 'opacity-100' : ''} mx-auto`}>
             <h1 className={`${styles.heading1}`}>Eventy</h1>

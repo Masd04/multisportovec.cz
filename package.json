@@ -1,6 +1,8 @@
 {
   "name": "swapper",
   "version": "0.0.0",
+  "homepage": "https://masd04.github.io/multisportovec.cz/",
+  "private": false,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -9,6 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^6.3.0"
