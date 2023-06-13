@@ -1,0 +1,240 @@
+import React from "react";
+import {Link} from 'react-router-dom';
+
+function Button({text, bg, padding}) {
+  return (
+    <div>
+      <button
+        className={`
+          ${padding || 'px-6 py-2'} text-sm font-semibold uppercase 
+          rounded-sm text-white transition ${bg}`}
+      >
+        <span>{text}</span>
+      </button>
+    </div>
+  );
+}
+
+
+function Navbar() {
+  return (
+    <div className="fixed left-0 right-0 top-0 h-16 shadow-md border-b-2 border-gray-100 bg-gray-900">
+      <nav className="flex items-center container mx-auto h-full justify-between">
+        
+
+        <div>
+          <ul className="flex items-center space-x-10 text-sm">
+            <li><Link to="/" className="text-gray-400 hover:text-gray-100">O nás</Link></li>
+            <li><Link to="/about" className="text-gray-400 hover:text-gray-100">Děti</Link></li>
+            <li><Link to="/" className="text-gray-400 hover:text-gray-100">Dospělí</Link></li>
+            <li><Link to="/" className="text-gray-400 hover:text-gray-100">Náš tým</Link></li>
+            <li><Link to="/" className="text-gray-400 hover:text-gray-100">Galerie</Link></li>
+            <li><Link to="/" className="text-gray-400 hover:text-gray-100">Kontakt</Link></li>
+          </ul>
+        </div>
+        
+      </nav>
+    </div>
+  );
+}
+
+export default Navbar;
+
+
+
+
+import React from 'react';
+import Navbar from './components/Navbar';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import styles from "./style";
+
+function App() {
+  return (
+    <Router>
+    <div className="pt-20">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
+    </Router>
+  )
+}
+
+export default App
+
+
+
+
+HOME ------------>
+
+import React, { useState, useEffect } from 'react';
+import { dinobg, mPohar, oPohar } from '../static'
+import styles from '../style'
+
+function Home() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate page loading
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, []);
+
+  return (
+    <>
+
+      <div className="flex-col sm:flex-row flex justify-evenly items-center">
+      <a href="/deti"><button className={`${styles.buttons_home} ${styles.appear_home_buttons} ${!isLoading ? 'opacity-100' : ''}`}>
+          <img
+              src={dinobg}
+              alt="First Button"
+              className="w-80 h-80 transition duration-300 transform hover:scale-110 hover:shadow-lg"
+    />
+    
+        </button></a>
+        <a href="/dospeli"><button className={`${styles.buttons_home} ${styles.appear_home_buttons} ${!isLoading ? 'opacity-100' : ''}`}>
+          <img
+              src={mPohar}
+              alt="Second Button"
+              className="w-80 h-80 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg"
+    />
+        </button></a>
+      </div>
+
+
+      <div className="flex flex-col sm:flex-row mb-4 my-10">
+
+        <div className={`${styles.card_home } bg-orange ${styles.appear_home_cards} ${!isLoading ? 'opacity-100' : ''}`}>
+          <h1 className={`${styles.heading1}`}>Kroužek</h1>
+          <p className={`${styles.paragraph} text-center`}>
+          Multisportovec z.s. přichází s myšlenkou, která v České
+          republice nemá obdoby.
+          Rozjíždíme kroužek, na kterém si děti vyzkouší největší
+          možnou škálu sportů.
+          Od kvalifikovaných trenérů se jim dostane té nejlepší
+          péče.
+          Během 9 měsíců dostanou do povědomí více, než 16
+          sportů, které by měl každý multisportovec umět.
+          Našim cílem je děti naučit nejen základy v daných
+          sportech, ale hlavně v nich probudit lásku ke sportu.
+          Ta se bohužel díky rozvíjejícím se technologiím a síle
+          počítačů vytrácí.
+          Víme, že pohyb je zdravý a tuto znalost předáváme dál.
+          Rozmanitost sportů v dětech vyvine chuť učit se novým
+          věcem, která se každému v životě hodí.
+          </p>
+        </div>
+
+        <div className={`${styles.card_home} bg-[#6ba0ea] ${styles.appear_home_cards} ${!isLoading ? 'opacity-100' : ''}`}>
+        <h1 className={`${styles.heading1}`}>Eventy</h1>
+          <p className={`${styles.paragraph}`}>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec iaculis gravida nulla. Vivamus porttitor turpis ac leo. Duis risus. Mauris tincidunt sem sed arcu. Pellentesque pretium lectus id turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer lacinia. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Fusce aliquam vestibulum ipsum. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Phasellus faucibus molestie nisl. Etiam egestas wisi a erat. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Etiam dictum tincidunt diam. Sed convallis magna eu sem. Quisque tincidunt scelerisque libero. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante.
+          </p>
+        </div>
+
+      </div>      
+
+    </>
+  )
+}
+
+export default Home
+
+
+
+NAVBAR -------->
+
+const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+  const navRef = useRef();
+  const location = useLocation();
+  const { pathname } = location;
+
+  const getNavLinkClass = (path, index) => {
+    const baseClass = "text-white text-2xl font-poppins font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10";
+    const colorClass = index % 2 === 0 ? "hover:text-green-500" : "hover:text-yellow-400";
+    const activeClass = pathname === path ? colorClass.replace('hover:', '') : "";
+    return `${baseClass} ${colorClass} ${activeClass}`;
+  }
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (!navRef.current.contains(event.target)) {
+        if (!toggle) return;
+        setToggle(false);
+      }
+    };
+
+    window.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, [toggle]);
+
+  const handleClick = (e) => {
+    e.stopPropagation();
+    setToggle((prev) => !prev);
+  }
+
+  const handleNavLinkClick = () => {
+    setToggle(false);
+  }
+
+  const navLinks = [
+    {path: "/", text: "Home"},
+    {path: "/deti", text: "Kroužek"},
+    {path: "/dospeli", text: "Eventy"},
+    {path: "/tym", text: "Náš tým"},
+    {path: "/", text: "Galerie"},
+    {path: "/", text: "Kontakt"},
+  ];
+
+
+<nav className="w-full flex py-4 items-center xs:py-2 navbar top-0 rounded-l bg-black shadow-2xl z-50">
+
+        <a href="/" className="hidden sm:flex md:flex lg:flex xl:flex w-1/6 xs:ml-5 ss:ml-5 sm:ml-5 md:ml-10 object-contain cursor-pointer scale-100 hover:scale-110"><img src={mNapis} alt="Logo"/></a>
+         {/*<a href="/" className="w-60 object-contain cursor-pointer sm:hidden"><img src={logoText} alt="Logo"/></a> */}
+
+        <ul className="list-none sm:flex hidden justify-center items-center flex-1">
+            
+            <li className={`${styles.hover}`}><Link to="/" className={`text-white text-2xl font-bold cursor-pointer text-[16px] mr-10`}>O nás</Link></li>
+            <li className={`${styles.hover}`}><Link to="/deti" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Kroužek</Link></li>
+            <li className={`${styles.hover}`}><Link to="/dospeli" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Eventy</Link></li>
+            <li className={`${styles.hover}`}><Link to="/tym" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Náš tým</Link></li>
+            <li className={`${styles.hover}`}><Link to="/" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Galerie</Link></li>
+            <li className={`${styles.hover}`}><Link to="/" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Kontakt</Link></li>
+            
+        </ul> 
+
+                {/* LOGO -> Nápis FBC? */}
+        <div className="sm:hidden flex flex-1 items-center justify-end">  
+              <img src={toggle ? close : menu} alt="MenuButton" className="w-[28px] h-[28px] object-contain mr-5"
+              onClick={() => setToggle((prev) => !prev)}
+              />
+
+            <div className={`${toggle ? 'flex' : 'hidden'}
+              p-6 bg-black-gradient absolute top-10 right-0 mx-4 my-7 min-w[140px] rounded-xl sidebar`}>
+
+            <ul className="list-none flex flex-col justify-end items-center flex-1">
+
+             <li className={`${styles.hover}`}><Link to="/" className={`text-white text-2xl font-bold cursor-pointer text-[16px] mr-10`}>O nás</Link></li>
+             <li className={`${styles.hover}`}><Link to="/deti" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Kroužek</Link></li>
+             <li className={`${styles.hover}`}><Link to="/dospeli" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Eventy</Link></li>
+             <li className={`${styles.hover}`}><Link to="/tym" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Náš tým</Link></li>
+             <li className={`${styles.hover}`}><Link to="/" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Galerie</Link></li>
+             <li className={`${styles.hover}`}><Link to="/" className="text-white text-2xl font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10">Kontakt</Link></li>
+            
+            </ul>              
+            </div>
+
+        </div> 
+
+    </nav>
+
