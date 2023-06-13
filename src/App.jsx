@@ -10,7 +10,7 @@ import styles from "./style";
 
 function App() {
   return (
-    <Router basename={"/Multisportovec.cz"}>
+    <Router basename={"/multisportovec.cz"}>
     
     <div className="absolute top-0 left-0 right-0 bottom-0 overflow-y-scroll bg-gray-200">
     
