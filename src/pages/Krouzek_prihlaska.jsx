@@ -16,7 +16,7 @@ function Krouzek_prihlaska() {
 
 
         <div className="mt-7 flex items-top justify-center">
-        <form className="bg-orange shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4 w-[95%] sm:w-3/4">
+        <form className="bg-orange shadow-md rounded-l px-8 pt-6 pb-8 mb-4 w-[95%] sm:w-3/4">
 
           <div className="mb-4 grid sm:grid-cols-2 gap-6">
             <div>

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Navbar from './components/Navbar';
+import ScrollToTop from "./components/ScrollToTop";
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -11,10 +12,13 @@ import Krouzek_prihlaska from './pages/Krouzek_prihlaska';
 import styles from "./style";
 
 function App() {
+  const scrollRef = useRef();
+
   return (
     <Router basename={"/multisportovec.cz"}>
-    
-    <div className="absolute top-0 left-0 right-0 bottom-0 overflow-y-scroll bg-gray-200">
+      <ScrollToTop scrollRef={scrollRef} />
+    <div ref={scrollRef} className="absolute top-0 left-0 right-0 bottom-0 overflow-y-scroll bg-gray-200">
+      
     
     <div className="w-full overflow-hidden">
 
