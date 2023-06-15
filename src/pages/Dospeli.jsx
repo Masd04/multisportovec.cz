@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../style'
+import {Link} from 'react-router-dom'
 
 function Dospeli() {
   return (
@@ -17,9 +18,11 @@ function Dospeli() {
  
 
       <div className="flex items-center justify-center">
-      <button className={`${styles.button_event}`} type="submit">
-        PODAT PŘIHLÁŠKU
-      </button>
+      <Link to="/event_prihlaska">
+            <button className={`${styles.button_event}`} type="submit">
+              PODAT PŘIHLÁŠKU
+            </button>
+      </Link>
       </div>
 
     

@@ -4,6 +4,9 @@ const styles = {
     buttons_home: "flex items-center justify-center bg-transparent border-none focus:outline-none flex-shrink-0",
     button_krouzek: "bg-orange text-black scale-100 hover:scale-105 hover:bg-black hover:text-white black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline",
     button_event: "bg-poharBlue text-white scale-100 hover:scale-105 hover:bg-black hover:text-poharBlue black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline",
+    button_krouzek_p: "bg-gray-300 text-black scale-100 hover:scale-105 hover:bg-black hover:text-white black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline",
+    button_event_p: "bg-white text-black scale-100 hover:scale-105 hover:bg-black hover:text-poharBlue black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline",
+
 
     card_home: "w-[95%] sm:mx-6 my-4 px-8 pb-6 rounded-3xl shadow-xl sm:min-h-[480px]",
 

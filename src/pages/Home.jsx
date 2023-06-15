@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { dinobg, mPohar, oPohar } from '../static'
+import { dinonew, mPohar, oPohar } from '../static'
 import {Link} from 'react-router-dom'
 import styles from '../style'
 
@@ -22,7 +22,7 @@ function Home() {
         <Link to="/deti">
             <button className={`${styles.buttons_home} ${styles.appear_home_buttons} ${!isLoading ? 'opacity-100' : ''} mx-auto`}>
               <img
-                src={dinobg}
+                src={dinonew}
                 alt="First Button"
                 className="w-80 h-80 transition duration-300 transform hover:scale-110 hover:shadow-lg"
               />
@@ -44,9 +44,11 @@ function Home() {
           </div>
 
           <div className="flex items-center justify-center">
+          <Link to="/krouzek_prihlaska">
             <button className={`${styles.button_krouzek}`} type="submit">
               PODAT PŘIHLÁŠKU
             </button>
+          </Link>
           </div>
 
         </div>
@@ -80,9 +82,11 @@ function Home() {
           </div>
 
           <div className="flex items-center justify-center">
+          <Link to="/event_prihlaska">
             <button className={`${styles.button_event}`} type="submit">
               PODAT PŘIHLÁŠKU
             </button>
+            </Link>
           </div>
 
         </div>

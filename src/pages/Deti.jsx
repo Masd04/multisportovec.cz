@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../style'
+import {Link} from 'react-router-dom'
 
 function Deti() {
   return (
@@ -50,9 +51,11 @@ function Deti() {
       </div>
 
       <div className="flex items-center justify-center">
-      <button className={`${styles.button_krouzek}`} type="submit">
-        PODAT PŘIHLÁŠKU
-      </button>
+      <Link to="/krouzek_prihlaska">
+            <button className={`${styles.button_krouzek}`} type="submit">
+              PODAT PŘIHLÁŠKU
+            </button>
+      </Link>
       </div>
 
    

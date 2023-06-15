@@ -6,6 +6,8 @@ import About from './pages/About';
 import Deti from './pages/Deti';
 import Dospeli from './pages/Dospeli';
 import Tym from './pages/Tym';
+import Event_prihlaska from './pages/Event_prihlaska';
+import Krouzek_prihlaska from './pages/Krouzek_prihlaska';
 import styles from "./style";
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path="/deti" element={<Deti />} />
         <Route path="/dospeli" element={<Dospeli />} />
         <Route path="/tym" element={<Tym />} />
+        <Route path="/event_prihlaska" element={<Event_prihlaska />} />
+        <Route path="/krouzek_prihlaska" element={<Krouzek_prihlaska />} />
       </Routes>
         </div>
       </div>
