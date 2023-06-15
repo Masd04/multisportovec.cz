@@ -18,23 +18,23 @@ function Krouzek_prihlaska() {
         <div className="mt-7 flex items-top justify-center">
         <form className="bg-orange shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4 w-[95%] sm:w-3/4">
 
-          <div className="mb-4 grid sm:grid-cols-2 gap-4">
+          <div className="mb-4 grid sm:grid-cols-2 gap-6">
             <div>
               <label className="block text-gray-700 text-lg      font-bold mb-2" htmlFor="playerFirstName">
-                Jméno hráče
+                Jméno sportovce
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="playerFirstName" name="playerFirstName" type="text" placeholder="Jméno hráče" required />
+                id="playerFirstName" name="playerFirstName" type="text" placeholder="Jméno sportovce" required />
             </div>
 
           <div>
             <label className="block text-gray-700 text-lg      font-bold mb-2" htmlFor="playerLastName">
-              Přijmení hráče
+              Přijmení sportovce
             </label>
             <input
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="playerLastName" name="playerLastName" type="text" placeholder="Přijmení hráče" required />
+                  id="playerLastName" name="playerLastName" type="text" placeholder="Přijmení sportovce" required />
           </div>        
 
           <div>
