@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Navbar from './components/Navbar';
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -30,7 +31,7 @@ function App() {
 
 
       <div className={`${styles.flexStart} ${styles.paddingY}`}>
-        <div className={`${styles.paddingY} ${styles.boxWidth}`}>              
+        <div className={`${styles.paddingY1} ${styles.boxWidth}`}>              
         <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />} />
@@ -43,7 +44,11 @@ function App() {
         </div>
       </div>
 
-      
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Footer/>
+        </div>
+      </div>
 
       
 

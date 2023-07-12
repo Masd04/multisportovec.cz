@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@fontsource-variable/mulish": "^5.0.6",
+    "@fontsource-variable/rubik": "^5.0.7",
     "gh-pages": "^5.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",

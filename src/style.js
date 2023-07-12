@@ -1,6 +1,9 @@
 const styles = {
     boxWidth: "xl:max-w-[1280px] w-full",
 
+    slogan: "w-full flex justify-center  mb-4 sm:mb-8",
+
+
     buttons_home: "flex items-center justify-center bg-transparent border-none focus:outline-none flex-shrink-0",
     button_krouzek: "bg-orange text-black scale-100 hover:scale-105 hover:bg-black hover:text-white black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline",
     button_event: "bg-poharBlue text-white scale-100 hover:scale-105 hover:bg-black hover:text-poharBlue black font-bold py-3 px-10 rounded focus:outline-none focus:shadow-outline",
@@ -12,16 +15,18 @@ const styles = {
 
     card_trener: "w-[95%] xs:w-1/2 ss:w-1/2 sm:w-[28%] lg:w-[28%] flex flex-col justify-center p-2 border-2 border-black my-3",
 
-    appear_home_buttons: "opacity-0 transition-opacity duration-2000 ease-in-out",
-    appear_home_cards: "opacity-0 transition-opacity duration-3500 ease-in-out",
+    appear_home_buttons: "opacity-0 transition-opacity duration-4000 ease-in-out delay-1000",
+    appear_home_cards: "opacity-0 transition-opacity duration-5000 ease-in-out delay-2000",
+    appear_home_slogan: "opacity-0 transition-opacity duration-1000 ease-in-out",
   
-    heading1: "font-poppins font-semibold xs:text-[48px] text-[40px] text-black xs:leading-[76.8px] leading-[66.8px] w-full text-center",
+    heading1: "font-rubik font-semibold xs:text-[48px] text-[40px] text-black xs:leading-[76.8px] leading-[66.8px] w-full text-center",
     headingDeti: "font-poppins font-semibold xs:text-[48px] text-[40px] text-orange xs:leading-[76.8px] leading-[66.8px] w-full text-center",
     paragraph: "font-poppins font-normal text-[18px] leading-[30.8px]",
     paragraphTym: "font-poppins font-normal text-[18px] leading-[30.8px] text-black text-center font-medium text-base mx-5",
   
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
+    
   
     paddingX: "sm:px-16 px-6",
     paddingY: "sm:py-14 py-12",
@@ -30,10 +35,17 @@ const styles = {
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
+    marginT: "sm:mt-18 mt-6",
 
     tymH1: "text-2xl my-4 text-black text-center font-medium",
+
+
     footerIcon: "w-[20%] p-3 mt-1 ml-20 scale-100 hover:scale-125 lg:p-1 lg:mt-1 md:p-6 md:mt-0 sm:p-4 sm:mt-0 ss:p-1 ss:mt-3 xs:p-0 xs:mt-6",
-  
+    footerIcon1: "w-[18.5%] p-3 mt-1 ml-20 scale-100 hover:scale-125 lg:p-1 lg:mt-1 md:p-6 md:mt-0 sm:p-4 sm:mt-0 ss:p-1 ss:mt-3 xs:p-0 xs:mt-6",
+    footerH1: "font-rubik font-normal text-[1.25rem] leading-[30.8px]",
+    footerText: "font-mulish font-normal text-[1.1rem] leading-[31.8px]",
+    footerLine: "w-[90%] h-[1px] bg-white mx-auto my-5",
+
     hover: "scale-100 hover:scale-110"
 };
   

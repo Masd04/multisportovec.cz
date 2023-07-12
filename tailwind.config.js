@@ -12,9 +12,11 @@ module.exports = {
         orange: "rgb(252,165,0)",
         poharBlue: "rgba(2,117,253,1)",
       },
-      //fontFamily: {
-      //  poppins: ["Poppins", "sans-serif"],
-      //},
+      fontFamily: {
+        rubik: ["Rubik Variable", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        mulish: ["Mulish Variable", "sans-serif"],
+      },
       animation: {
         'text':'text 10s ease infinite',
     },
@@ -23,7 +25,20 @@ module.exports = {
       '1000': '1000ms',
       '2000': '2000ms',
       '3500': '3500ms',
+      '4000': '4000ms',
+      '4500': '4500ms',
+      '5000': '5000ms',
+      '6000': '6000ms',
+      '7000': '7000ms',
+      '8000': '8000ms',
     },
+
+    transitionDelay: {
+      '0': '0ms',
+      '500': '500ms',
+      '1000': '1000ms',
+      '2000': '2000ms',
+      },
 
     keyframes: {
         'text': {

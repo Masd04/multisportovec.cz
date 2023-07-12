@@ -15,7 +15,7 @@ const Navbar = () => {
   const { pathname } = location;
 
   const getNavLinkClass = (path, index) => {
-    const baseClass = "text-white text-2xl font-poppins font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10";
+    const baseClass = "text-white text-2xl font-rubik font-bold cursor-pointer text-[16px] scale-100 hover:scale-110 mr-10";
     //const colorClass = index % 2 === 0 ? "hover:text-green-500" : "hover:text-yellow-400";
     //const activeClass = pathname === path ? colorClass.replace('hover:', '') : "";
     return `${baseClass}`;

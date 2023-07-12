@@ -6,7 +6,7 @@ function Tym() {
   return (
     <div className={`${styles.padingX} ${styles.flex}`}>
 
-    <div className={`${styles.marginX} flex-1`}>
+    <div className={`${styles.marginX} ${styles.marginT} flex-1`}>
       
       <div className={`${styles.heading1}`}>
         Trenérský tým

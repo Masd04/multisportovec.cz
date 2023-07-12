@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { dinonew, mPohar, oPohar } from '../static'
+import { dinonew, mPohar, slogan } from '../static'
 import {Link} from 'react-router-dom'
 import styles from '../style'
 
@@ -16,8 +16,13 @@ function Home() {
 
   return (
     <>
+      <div className={`${styles.slogan} ${styles.appear_home_slogan} ${!isLoading ? 'opacity-100' : ''}`}>
+          <img src={slogan} alt="Slogan: Kolik sportů umíš, tolikrát jsi člověkem!" className="w-[95%] sm:w-[75%] mt-5 sm:mt-0" />
+        </div>
+
 
       <div className="flex-col sm:flex-row flex justify-center z-0">
+
         <div className="w-full sm:w-1/2">
         <Link to="/deti">
             <button className={`${styles.buttons_home} ${styles.appear_home_buttons} ${!isLoading ? 'opacity-100' : ''} mx-auto`}>
