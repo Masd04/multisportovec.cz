@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../style'
-import { facebook, instagram, oPohar, textlessmpohar } from '../static'
+import { facebook, instagram, signature, textlessmpohar } from '../static'
 //  Fonts:
 import '@fontsource-variable/rubik'
 import '@fontsource-variable/mulish'
@@ -48,7 +48,11 @@ const Footer = () => {
         
       </div>
 
-      <div className={`${styles.footerLine}`}></div>
+      <div className={`${styles.footerLine1}`}></div>
+
+      <div className="flex justify-center">
+        <img src={signature} alt="Signature" className="w-[20%] sm:w-[6%]"/>
+      </div>
 
     </section>
   )

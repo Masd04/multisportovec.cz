@@ -30,7 +30,7 @@ const styles = {
   
     paddingX: "sm:px-16 px-6",
     paddingY: "sm:py-14 py-12",
-    paddingY1: "sm:pb-16 py-6",
+    paddingY1: "sm:pb-2 py-6",
     padding: "sm:px-16 px-6 sm:py-12 py-4",
   
     marginX: "sm:mx-16 mx-6",
@@ -45,6 +45,7 @@ const styles = {
     footerH1: "font-rubik font-normal text-[1.25rem] leading-[30.8px]",
     footerText: "font-mulish font-normal text-[1.1rem] leading-[31.8px]",
     footerLine: "w-[90%] h-[1px] bg-white mx-auto my-5",
+    footerLine1: "w-[90%] h-[1px] bg-white mx-auto mt-5 mb-3",
 
     hover: "scale-100 hover:scale-110"
 };
