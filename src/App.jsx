@@ -4,7 +4,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
+import Kontakt from './pages/Kontakt';
+import Galerie from './pages/Galerie';
 import Deti from './pages/Deti';
 import Dospeli from './pages/Dospeli';
 import Tym from './pages/Tym';
@@ -34,7 +35,8 @@ function App() {
         <div className={`${styles.paddingY1} ${styles.boxWidth}`}>              
         <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/galerie" element={<Galerie />} />
         <Route path="/deti" element={<Deti />} />
         <Route path="/dospeli" element={<Dospeli />} />
         <Route path="/tym" element={<Tym />} />

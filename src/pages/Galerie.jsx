@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { dinonew, mPohar, sloganO } from '../static'
+import { dinonew, mPohar, sloganM } from '../static'
 import {Link} from 'react-router-dom'
 import styles from '../style'
 
-function Home() {
+function Galerie() {
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
       <div className={`${styles.slogan} ${styles.appear_home_slogan} ${!isLoading ? 'opacity-100' : ''}`}>
-          <img src={sloganO} alt="Slogan: Kolik sportů umíš, tolikrát jsi člověkem!" className="w-[95%] sm:w-[85%] mt-5 sm:mt-0" />
+          <img src={sloganM} alt="Slogan: Kolik sportů umíš, tolikrát jsi člověkem!" className="w-[95%] sm:w-[85%] mt-5 sm:mt-0" />
         </div>
 
 
@@ -101,4 +101,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default Galerie;

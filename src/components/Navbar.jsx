@@ -50,8 +50,8 @@ const Navbar = () => {
     {path: "/deti", text: "Kroužek"},
     {path: "/dospeli", text: "Eventy"},
     {path: "/tym", text: "Náš tým"},
-    {path: "/", text: "Galerie"},
-    {path: "/", text: "Kontakt"},
+    {path: "/galerie", text: "Galerie"},
+    {path: "/kontakt", text: "Kontakt"},
   ];
 
 

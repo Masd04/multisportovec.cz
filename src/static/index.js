@@ -13,6 +13,8 @@ import dinonew from "./img/dinonew.png";
 import facebook from "./img/fb.png";
 import instagram from "./img/ig.svg";
 import slogan from "./img/slogan.png";
+import sloganM from "./img/sloganM.png";
+import sloganO from "./img/sloganO.png";
 
 
 
@@ -35,5 +37,7 @@ export {
   dinonew,
   facebook,
   instagram,
-  slogan
+  slogan,
+  sloganM,
+  sloganO
 };
