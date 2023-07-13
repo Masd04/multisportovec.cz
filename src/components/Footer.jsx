@@ -50,8 +50,8 @@ const Footer = () => {
 
       <div className={`${styles.footerLine1}`}></div>
 
-      <div className="flex justify-center">
-        <img src={signature} alt="Signature" className="w-[20%] sm:w-[6%]"/>
+      <div className="flex justify-end">
+        <img src={signature} alt="Signature" className="w-[22%] sm:w-[80px] opacity-40"/>
       </div>
 
     </section>

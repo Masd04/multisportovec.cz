@@ -15,7 +15,7 @@ import instagram from "./img/ig.svg";
 import slogan from "./img/slogan.png";
 import sloganM from "./img/sloganM.png";
 import sloganO from "./img/sloganO.png";
-import signature from "./img/signature.png";
+import signature from "./img/signature1.png";
 
 
 
